@@ -1,0 +1,140 @@
+header{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+footer{
+  clear: both;
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+  background: #BDB76B;
+}
+#logo{
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.nav{
+  font-size: 14px;
+  float: right;
+  margin-right: 50px;
+}
+.nav a{
+  padding: 0 5px;
+}
+.nav a~a{
+  padding: 0 5px;
+  border-left: 1px solid #000;
+}
+/*menu*/
+#menubar{
+  clear: both;
+  float: left;
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  background-color: #DAA520;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 10px 10px 0 0;
+  z-index:99;
+  position: relative;
+}
+#menu, #menu ul{
+  margin: 0;
+  padding: 0;
+}
+#menu > li{
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 10px;
+}
+#menu a{
+  font-size: 18px;
+  display: block;
+  padding: 13px;
+  text-align: center;
+}
+#menu ul{
+  display: none;
+  background-color: 	#F0E68C;
+}
+#menu li:hover,
+#menu ul li:hover{
+  background-color: #FFFF00;
+}
+#language{
+  float: right;
+  margin: 15px 30px;
+}
+/*infomation*/
+.info{
+  width: 500px;
+  clear: both;
+  margin: auto;
+  margin-top: 20px;
+}
+.info img{
+  width: 500px;
+  height: 800px;
+  display: none;
+}
+.info-list{
+  margin-top: 20px;
+  height: 800px;
+  /*background: #888888;*/
+  text-align: center;
+}
+.info-list li{
+  cursor: pointer;
+}
+.btn-group{
+  margin: 20px 0 10px 0;
+}
+.btn-group ul{
+  min-width: 80px;
+}
+.emperor{
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 5%;
+  padding-right: 5%; 
+  font-size: 30px;
+  font-weight: 600;
+}
+.emperor p{
+  font-family: '標楷體';
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  margin: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 75%;
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}

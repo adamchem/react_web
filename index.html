@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type='text/javascript' src='js/menu.js'></script>
+  <script type='text/javascript' src='js/photo.js'></script>
+  <script type='text/javascript' src='js/bootstrap.min.js'></script>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <a href="#"><img src="image/logo.png" width='120' height='120'/></a>
+    </div>
+    <div class="nav">
+      <nav>
+        <a href="#">關於我們</a>
+        <a href="#">商品列表</a>
+        <a href="#">相關聯結</a>
+        <a href="#">連絡我們</a>
+      </nav>
+    </div>
+  </header>
+  <!-- main content start -->
+  <div id="menubar">
+    <!-- menu start -->
+    <ul id="menu">
+      <li><a href="#">會員專區</a>
+        <ul>
+          <li><a href="#">會員資訊</a></li>
+        </ul>
+      </li>
+      <li><a href="#">商品導覽</a>
+        <ul>
+          <li><a href="#">品質食安</a></li>
+          <li><a href="#">商品資訊</a></li>
+          <li><a href="#">商品型錄</a></li>
+        </ul>
+      </li>
+      <li><a href="#">銷售據點</a>
+        <ul>
+          <li><a href="#">據點資訊</a></li>
+          <li><a href="#">據點查詢</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- menu end -->
+    <div id="language">
+      <label>語言: </lable>
+      <select>
+        <option value="Chinese">中文</option>
+        <option value="Japanese">日文</option>
+        <option value="English">英文</option>
+      </select>
+    </div>
+  </div>
+  <!-- information -->
+  <div class="main container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="info">
+          <img src="image/pic_1.jpg" class="img-circle">
+          <script>photoChange();</script>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="info-list">
+          <div class="col-md-4 col-xs-2" id="Qing">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                大清皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>順治</a></li>
+                <li><a>康熙</a></li>
+                <li><a>雍正</a></li>
+                <li><a>乾隆</a></li>
+                <li class="divider"></li>
+                <li><a>大清皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-2" id="Ming">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                大明皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>洪武</a></li>
+                <li><a>永樂</a></li>
+                <li><a>洪熙</a></li>
+                <li><a>宣德</a></li>
+                <li class="divider"></li>
+                <li><a>大明皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-2" id="SSong">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                南宋皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>高宗</a></li>
+                <li><a>孝宗</a></li>
+                <li><a>光宗</a></li>
+                <li><a>寧宗</a></li>
+                <li class="divider"></li>
+                <li><a>南宋皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-2" id="NSong">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                北宋皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>太祖</a></li>
+                <li><a>太宗</a></li>
+                <li><a>真宗</a></li>
+                <li><a>仁宗</a></li>
+                <li class="divider"></li>
+                <li><a>北宋皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-2" id="Tang">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                大唐皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>高祖</a></li>
+                <li><a>太宗</a></li>
+                <li><a>高宗</a></li>
+                <li><a>中宗</a></li>
+                <li class="divider"></li>
+                <li><a>大唐皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-2" id="Han">
+            <div class="btn-group">
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                大漢皇帝 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a>高祖</a></li>
+                <li><a>惠帝</a></li>
+                <li><a>太宗</a></li>
+                <li><a>景帝</a></li>
+                <li class="divider"></li>
+                <li><a>大漢皇帝</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="emperor col-md-12 col-xs-12">
+            <p>年號: <span></span></p>
+            <p>皇帝: <span></span></p>
+            <p>諡號: <span></span></p>
+            <p>在位: <span></span></p>
+            <p>葬於: <span></span></p>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <!-- main content end -->
+  <div class="container-fluid yt-api"></div>
+  <footer></footer>
+  <script src="bundle.js"></script>
+</body>
+</html>
