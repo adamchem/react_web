@@ -1,15 +1,21 @@
+var webpack = require('webpack');
+var path = require('path');
+
 module.exports = {
   entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname,
+    path: path.join(__dirname + '/public'),
     publicPath: '/',
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['', '.js']
+  },
   devServer: {
     historyApiFallback: true,
-    contentBase:        './',
+    contentBase:        './public',
     inline:             true,
     progress:           true,
     port:               3000
@@ -23,5 +29,10 @@ module.exports = {
         presets: ['es2015', 'react']
       }
     }]
-  }
+  },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
