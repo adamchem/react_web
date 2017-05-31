@@ -10,8 +10,10 @@ for(var i = 0; i < photoURL.length; i++){
 
 function photoChange(){
     $('.info img').fadeOut(500,function(){
-        $(this).attr("src", photoURL[index]);
-        $(this).fadeIn(500);
+        $(this).attr("src", photoURL[index]).load(function(){
+            $(this).fadeIn(500);
+        });
+        // $(this).fadeIn(500);
         index++;
     })
     if(index >= photoURL.length){
